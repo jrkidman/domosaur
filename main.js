@@ -4,6 +4,10 @@
 let spanMessWithMe = document.querySelector("span.mess-with-me");
 spanMessWithMe.style.fontSize = "40px";
 
+spanMessWithMe.addEventListener("click", function(){
+    spanMessWithMe.style.color = "orange";
+});
+
 
 // select paragraph with class "mess-with-me"
 // change background color to green
@@ -19,7 +23,7 @@ secondDinosaur.style.display = "none";
 
 // select first dinosaur
 // change size to be 324px wide
-// event listener, when clicked, get a red border
+// add event listener, when clicked, get a red border
 let firstDinosaur = document.querySelector("#triceratops");
 firstDinosaur.style.width = "324px";
 
@@ -30,7 +34,7 @@ firstDinosaur.addEventListener("click", function () {
 
 
 // select feathered dinosaur
-// event listener, when clicked, becomes 50% transparent
+// add event listener, when clicked, becomes 50% transparent
 let featheredDinosaur = document.querySelector("#feathers");
 featheredDinosaur.addEventListener("click", function () {
     featheredDinosaur.style.opacity = "0.5";
@@ -39,7 +43,7 @@ featheredDinosaur.addEventListener("click", function () {
 
 
 // select "switch background color" button
-// event listener, when clicked, change background color to any color
+// add event listener, when clicked, change background color to any color
 // stretch goal, switches back and forth from white to toggled color
 let switchColorButton = document.querySelector("#toggle");
 let dinoRow = document.querySelector("#row");
